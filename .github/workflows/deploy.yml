@@ -30,11 +30,10 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        # 改用 npm install 以相容沒有 package-lock.json 的專案
-        run: npm install
+        # 加上 --legacy-peer-deps 解決 edgesOut 及套件相依性衝突問題
+        run: npm install --legacy-peer-deps
 
       - name: Build
-        # 直接使用 vite build，避免因 TypeScript 型別警告而中斷發布
         run: npx vite build
 
       - name: Setup Pages
