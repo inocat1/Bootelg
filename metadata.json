@@ -1,0 +1,6 @@
+{
+  "name": "Elon Ransomware: Danmaku Escape",
+  "description": "A hilarious spoof ransomware warning from Elon Musk turning into a high-octane Touhou-style Danmaku dodging mini-game with chiptune synth audio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
